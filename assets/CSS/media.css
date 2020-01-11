@@ -1,0 +1,373 @@
+/*--------------------------------------1000px---------*/
+@media screen and (max-width: 1000px)
+{
+    #date
+    {
+        font-size: 90%;
+    }
+}
+
+/*---------------------------------------720px----------*/
+@media screen and (max-width: 720px)
+{
+    .largContact
+    {
+        font-size: 130%;
+    }
+    #quest
+    {
+        font-size: 110%;
+    }
+    .form-control
+    {
+        font-size: 90%;
+    }
+}
+.phtoDes
+{
+    height: 40vw;
+    width: auto !important;
+}
+
+/*---------------------------------------650px----------*/
+@media screen and (max-width: 650px)
+{
+    .form-control
+    {
+        font-size: 80%;
+    }
+}
+
+/*---------------------------------------635px----------*/
+@media screen and (max-width: 635px)
+{
+    .largContact
+    {
+        font-size: 120%;
+    }
+    #quest
+    {
+        font-size: 100%;
+    }
+}
+
+/*----------------------------------------610px----------*/
+@media screen and (max-width: 610px)
+{
+    .form-control
+    {
+        font-size: 70%;
+    }
+    #accep
+    {
+        font-size: 80%;
+    }
+    #ttlpage
+    {
+        font-size: 150%;
+    }
+    .prix
+    {
+        font-size: 1.4vw;
+    }
+}
+
+/*---------------------------------------575px----------*/
+@media screen and (max-width: 575px)
+{
+    #txtCdc
+    {
+        font-size: 5.5vw;
+        padding: 3vw;
+    }
+    .prix
+    {
+        margin-top: 1vw;
+        margin-bottom: 5vw;
+        font-size: 6vw;
+    }
+    #ColRg
+    {
+        border-bottom-left-radius: 15% 5%;
+        border-bottom-right-radius: 15% 5%;
+        border-top-left-radius: 15% 5%;
+        border-top-right-radius: 15% 5%;
+        box-shadow: 1px 1px lightgrey;
+    }
+    .euro
+    {
+         width: 7vw;
+         height: 7vw;
+         margin-bottom: 4px;
+    }
+    .parag
+    {
+        font-size: 2.3vw;
+    }
+    h3
+    {
+        font-size: 3.3vw;
+    }
+}
+
+/*---------------------------------------570px----------*/
+@media screen and (max-width: 570px)
+{
+    .largContact
+    {
+        font-size: 110%;
+    }
+    .largContact2
+    {
+        font-size: 130%
+    }
+    #quest
+    {
+        font-size: 90%;
+    }
+}
+
+/*----------------------------------------550px----------*/
+@media screen and (max-width: 550px)
+{
+    .largContact
+    {
+        font-size: 105%;
+    }
+    .largContact2
+    {
+        font-size: 130%
+    }
+    #quest
+    {
+        font-size: 85%;
+    }
+}
+
+/*----------------------------------------530px----------*/
+@media screen and (max-width: 530px)
+{
+    .largContact
+    {
+        font-size: 100%;
+    }
+    .largContact2
+    {
+        font-size: 120%
+    }
+    #quest
+    {
+        font-size: 80%;
+    }
+    #accep
+    {
+        font-size: 75%;
+    }
+    .parag
+    {
+        font-size: 2.7vw;
+    }
+    h3
+    {
+        font-size: 3.7vw;
+    }
+}
+
+/*--------------------------------------495px----------*/
+@media screen and (max-width: 495px)
+{
+    .largContact
+    {
+        font-size: 95%;
+    }
+    .largContact2
+    {
+        font-size: 110%
+    }
+    #quest
+    {
+        font-size: 75%;
+    }
+    #accep
+    {
+        font-size: 65%;
+    }
+}
+
+/*--------------------------------------475px----------*/
+@media screen and (max-width: 475px)
+{
+    .largContact
+    {
+        font-size: 90%;
+    }
+    .largContact2
+    {
+        font-size: 100%
+    }
+    #quest
+    {
+        font-size: 70%;
+    }
+    .parag
+    {
+        font-size: 2.8vw;
+    }
+    h3
+    {
+        font-size: 3.8vw;
+    }
+}
+
+/*--------------------------------------455px----------*/
+@media screen and (max-width: 455px)
+{
+    .largContact
+    {
+        font-size: 80%;
+    }
+    .largContact2
+    {
+        font-size: 90%
+    }
+    #quest
+    {
+        font-size: 60%;
+    }
+    .parag
+    {
+        font-size: 2.9vw;
+    }
+    h3
+    {
+        font-size: 3.9vw;
+    }
+}
+
+/*--------------------------------------435px----------*/
+@media screen and (max-width: 435px)
+{
+    .form-control
+    {
+        font-size: 60%;
+    }
+    #accep
+    {
+        font-size: 60%;
+    }
+}
+
+/*---------------------------------------425px----------*/
+@media screen and (max-width: 425px)
+{
+    .largContact
+    {
+        font-size: 70%;
+    }
+    .largContact2
+    {
+        font-size: 80%
+    }
+    #quest
+    {
+        font-size: 60%;
+    }
+    #accep
+    {
+        font-size: 55%;
+    }
+}
+
+
+/*---------------------------------------400px----------*/
+@media screen and (max-width: 400px)
+{
+    .largContact
+    {
+        font-size: 60%;
+    }
+    .largContact2
+    {
+        font-size: 70%
+    }
+    #quest
+    {
+        font-size: 50%;
+    }
+    #accep
+    {
+        font-size: 50%;
+    }
+    #ttlpage
+    {
+        font-size: 140%;
+    }
+    .parag
+    {
+        font-size: 3vw;
+    }
+    h3
+    {
+        font-size: 4vw;
+    }
+}
+
+/*----------------------------------------365px----------*/
+@media screen and (max-width: 365px)
+{
+    .largContact
+    {
+        font-size: 55%;
+    }
+    .largContact2
+    {
+        font-size: 70%
+    }
+    #quest
+    {
+        font-size: 45%;
+    }
+    #ttlpage
+    {
+        font-size: 130%;
+    }
+}
+
+/*-----------------------------------------345px----------*/
+@media screen and (max-width: 345px)
+{
+    .largContact
+    {
+        font-size: 50%;
+    }
+    .largContact2
+    {
+        font-size: 70%
+    }
+    #quest
+    {
+        font-size: 40%;
+    }
+    #ttlpage
+    {
+        font-size: 110%;
+    }
+}
+
+/*------------------------------------------325px----------*/
+@media screen and (max-width: 325px)
+{
+    .form-control
+    {
+        font-size: 55%;
+    }
+}
+
+/*------------------------------------MIN 1063px----------*/
+@media screen and (min-width: 1063px)
+{
+    #date
+    {
+        font-size: 120%;
+    }
+}

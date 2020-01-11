@@ -1,0 +1,234 @@
+/*----------GENERAL----------*/
+
+body
+{
+    cursor: default;
+    background-color: #f8f9fa;
+    color: #393939;
+}
+header
+{
+    padding: 2.5%;
+    background-color: #EEEEEE;
+}
+#slogan
+{
+    font-size: 3vw;
+    font-family: Comic Sans MS, sans-serif;
+    margin-top: 2%;
+    color: #393939;
+    text-align: center;
+    text-shadow: 0.4px 0.4px #5A5A5A, 0.7px 0.8px #717171;
+}
+h1 /* Titres corps des pages */
+{
+    margin-top: 3%;
+    padding: 1%;
+    font-family: Verdana, sans-serif;
+    color: #393939;
+    text-align: center;
+    background-color: #EEEEEE;
+    border-bottom-left-radius: 5% 20%;
+    border-bottom-right-radius: 5% 20%;
+    border-top-left-radius: 5% 20%;
+    border-top-right-radius: 5% 20%;
+    text-shadow: 0.4px 0.4px #5A5A5A, 0.7px 0.8px #717171;
+    box-shadow: 1px 1px lightgrey;
+}
+footer
+{
+    background-color: #EEEEEE;
+    border-top-left-radius: 1% 20%;
+    border-top-right-radius: 1% 20%;
+
+    box-shadow: 1px 1px lightgrey;
+}
+
+
+/*----------ACCUEIL----------*/
+
+#ColRg /* Coups de coeur */
+{
+    background-color: #EEEEEE;
+    margin-left: 4.5vw;
+    border-bottom-left-radius: 10% 7%;
+    border-bottom-right-radius: 10% 7%;
+    border-top-left-radius: 10% 7%;
+    border-top-right-radius: 10% 7%;
+    box-shadow: 1px 1px lightgrey;
+}
+h3 /* Titre Paragraphe */
+{
+    font-size: 3vw;
+    text-shadow: 0.5px 1px #EEEEEE, 0.5px 1.5px #EEEEEE, 0.5px 2px #EEEEEE;
+}
+.parag /* Paragraphes Accueil */
+{
+    text-align: justify;
+    padding-right: 1.2vw;
+}
+.ml-2 /* Paragraphes Accueil */
+{
+    font-size: 1.7vw;
+}
+#CDC /* Titre CDC */
+{
+    margin-top: 7px;
+}
+#txtCdc
+{
+    padding: 1.5vw;
+    font-size: 1.4vw;
+    font-family: Comic Sans MS, sans-serif;
+    text-shadow: 1px 1px silver, 2px 2px lightgrey, 1px 0 1px silver;
+}
+.imgcdc
+{
+    border-bottom-left-radius: 20% 20%;
+    border-bottom-right-radius: 20% 20%;
+    border-top-left-radius: 20% 20%;
+    border-top-right-radius: 20% 20%;
+    background-color: white;
+    box-shadow: 1px 1px lightgrey;
+}
+.prix /* Prix CDC */
+{
+    text-align: center;
+    margin-top: 2px;
+    border-bottom-left-radius: 5% 20%;
+    border-bottom-right-radius: 5% 20%;
+    border-top-left-radius: 5% 20%;
+    border-top-right-radius: 5% 20%;
+    background-color: #C7C7C7;
+    box-shadow: 0.7px 0.7px grey;
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 1.8vw;
+
+}
+.euro /* Euro CDC */
+{
+    margin-bottom: 1.2px;
+    width: 2.2vw;
+    height: 2.2vw;
+}
+
+
+/*----------PRODUITS----------*/
+
+.imgTab /* Images tab petite */
+{
+    width: 10vw;
+    box-shadow: 1px 1px lightgrey;
+    border-bottom-left-radius: 15% 15%;
+    border-bottom-right-radius: 15% 15%;
+    border-top-left-radius: 15% 15%;
+    border-top-right-radius: 15% 15%;
+}
+.txtDec /* Soulignement BTN tableau */
+{
+    text-decoration: inherit !important;
+}
+.prixTab /* Prix tableau */
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Comic Sans MS, sans-serif;
+    text-shadow: 1px 1px silver, 2px 2px lightgrey, 1px 0 1px silver;
+    font-size: 2.5vw;
+}
+.marque
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2vw;
+    color: teal;
+    font-family: Verdana, sans-serif;
+}
+.categTab
+{
+    text-decoration: inherit;
+    font-size: 3vw;
+    font-family: Courrier, sans-serif;
+}
+.refTab /* Reférences et libellé dans description */
+{
+    text-decoration: inherit;
+    font-size: 2vw;
+}
+.prix2Tab /* Prix description tab */
+{
+    font-size: 4vw;
+    text-decoration: inherit;
+    margin-left: 1vw;
+    font-family: Comic Sans MS, sans-serif;
+}
+.descTab /* Titre Descriptif Produits */
+{
+    text-decoration: inherit;
+    font-size: 3vw;
+    color: #007bff;
+    font-family: Comic Sans MS, sans-serif;
+    text-indent: 1vw;
+}
+.desc2Tab /* Descriptif Produits */
+{
+    text-decoration: inherit;
+    font-size: 1.5vw;
+    color: #007bff;
+    text-align: justify;
+    margin-right: 2px;
+    margin-top: 0.5vw;
+    padding: 1vw;
+    border : 1px solid;
+    border-bottom-left-radius: 5% 15%;
+    border-bottom-right-radius: 5% 15%;
+    border-top-left-radius: 5% 15%;
+    border-top-right-radius: 5% 15%;
+    box-shadow: 2px 2px lightblue;
+}
+
+/*----------CONTACT----------*/
+
+legend /* Titre fieldset form */
+{
+    font-size: 3vw;
+    background-color: #EEEEEE;
+    text-align: center;
+    border-bottom-left-radius: 1% 20%;
+    border-bottom-right-radius: 1% 20%;
+    border-top-left-radius: 1% 20%;
+    border-top-right-radius: 1% 20%;
+    box-shadow: 1px 1px lightgrey;
+    font-family: sans-serif;
+}
+#dates /* Input date */
+{
+    cursor: text;
+}
+.radI:hover /* Radio Sexe */
+{
+    cursor: pointer;
+}
+#rep4 /* Selecteur choix */
+{
+    cursor: pointer;
+}
+#ckbox /* Checkbox traitement form */
+{
+    cursor: pointer;
+}
+.requi /* Champs obligatoirs */
+{
+    color: red;
+    text-decoration: inherit;
+    font-size: 90%;
+}
+.erre /* Erreurs Form */
+{
+    color: red;
+    font-size: 1.2vw;
+}
+#oblig /* Phrase obligatoire */
+{
+    margin-left: 3vw;
+}
