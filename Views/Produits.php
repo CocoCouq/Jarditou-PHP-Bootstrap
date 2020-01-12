@@ -1,4 +1,4 @@
-<?php 
+<?php
     include 'header.php';
     //  Select de la table produit
     $requete = "SELECT pro_prix, pro_libelle, pro_id, pro_photo, pro_ref, pro_description, pro_d_ajout, pro_d_modif, pro_bloque FROM produits ORDER BY pro_prix";
@@ -18,9 +18,9 @@
 ?>
 <div class="accordion" id="accordionExample">
     <div class="card">
-        <div class="row card-header" id="headingOne">
+        <div class="row card-header" id="heading<?php echo $row->pro_id; ?>">
             <h2 class="col-4 mb-0 text-center">
-                <button class="txtDec btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="txtDec btn btn-link" type="button" data-toggle="collapse" data-target="#collapse<?php echo $row->pro_id; ?>" aria-expanded="true" aria-controls="collapseOne">
                     <img class="imgTab" src="../assets/images/<?php echo $row->pro_id; ?>.<?php echo $row->pro_photo; ?>" alt="Aramis">
                     <img src="../assets/images/clique.png" width="10%" alt="Cliquez ici">
                 </button>
@@ -32,7 +32,7 @@
                     <input class="btn btn-link" type="submit" name="Detail" value="<?php echo $row->pro_libelle; ?>">
                 </form>
         </div>
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div id="collapse<?php echo $row->pro_id; ?>" class="collapse" aria-labelledby="heading<?php echo $row->pro_id; ?>" data-parent="#accordionExample">
             <div class="row card-body">
                 <ins class="ReducImg col-6"><img class="img-thumbnail" src="../assets/images/<?php echo $row->pro_id; ?>.<?php echo $row->pro_photo; ?>" alt="Grande Photo"></ins>
                 <p class="col-5 offset-1">
