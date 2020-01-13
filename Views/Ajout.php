@@ -1,4 +1,6 @@
+<!-- Hearder -->
 <?php include 'header.php';?>
+<!-- Traitement formulaire + Requete SQL -->
 <?php
   // recupération des données du formulaire d'Ajout de produits
     $stock = $_POST['Stock'];
@@ -17,6 +19,8 @@
     $result = $db->query($requete);
     verifObj($result);
 ?>
+<!-- ******************************INSERT*********************************** -->
+<p class="prix">LES VALEURS ONT ÉTÉ AJOUTÉS AVEC SUCCÈS</p>
 <?php
   //  Affichage des données du produit
     echo "<h1>Catégorie : ".$categ."</h1>";
@@ -30,6 +34,6 @@
     echo "<h1>Bloqué".$bloq."</h1>";
 ?>
 
-LES VALEURS ONT ÉTÉ AJOUTÉS AVEC SUCCÈS
 
+<!-- Footer -->
 <?php include 'footer.php' ;?>

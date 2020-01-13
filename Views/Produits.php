@@ -1,3 +1,4 @@
+<!-- Hearder + Requete SQL -->
 <?php
     include 'header.php';
     //  Select de la table produit
@@ -6,6 +7,7 @@
     verifObj($result);
 ?>
 
+<!-- ******************************Produits********************************* -->
 <h1 id="ttlpage" class="col-4 offset-4">
     Produits
 </h1><br>
@@ -50,7 +52,7 @@
         </div>
     </div>
 </div><br>
-
 <?php } ?> <!--fin while -->
 
+<!-- Footer -->
 <?php include 'footer.php' ?>

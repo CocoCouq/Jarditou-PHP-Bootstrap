@@ -1,9 +1,10 @@
-<!-- *** HEADER *** -->
+<!-- Control Form  + Connexion DataBase -->
 <?php
-    include '../Controllers/lib.php';   //  Control du form
+    include '../Controllers/lib.php';
     require '../Models/Connexion.php';  //  Contenant la fonction de connexion à la database + verif des objets
-    $db = connexionBase();              //  Fonction de connexion
+    $db = connexionBase(); 
 ?>
+<!-- *** HEADER *** -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>

@@ -1,4 +1,6 @@
+<!-- Hearder -->
 <?php include 'header.php'; ?>
+<!-- Traitement formulaire + Requete SQL -->
 <?php
 // Recuperation des donées du formulaire
     $prenom = $_POST['prénom'];
@@ -42,6 +44,7 @@
         echo $key." : ".$value;
     }
 ?>
-   </section>
+</section>
 
+   <!-- Footer -->
 <?php include 'footer.php' ?>

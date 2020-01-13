@@ -1,5 +1,7 @@
+<!-- Hearder -->
 <?php include 'header.php';?>
 
+<!-- ******************************Formulaire de Contact*********************************** -->
 <h1 id="ttlpage" class="col-4 offset-4">
     Contact
 </h1><br>
@@ -76,10 +78,11 @@
     <input class="col-1 offset-1" id="ckbox" type="checkbox" name="Acceptation" title="Veuillez accepter le traitement du formulaire."><label class="col-9 pl-1" for="Accepte Form" id="Textaccept"><h6 id="accep">J'accepte le traitement informatique de ce formulaire.</h6></label>
     <p class="erre col-5 offset-1" id="errChckBox"></p>
     <section class="row">
-        <input class="col-3 col-lg-1 col-xs-2 offset-sm-1 btn btn-primary" id="buttonSend" type="submit"  name="submit" value="Envoyer" onclick="verif();" title="Envoyer">
+        <input class="col-3 col-lg-1 col-xs-2 offset-sm-1 btn btn-primary" id="buttonSend" type="submit"  name="submit" value="Envoyer" title="Envoyer">
         <input class="col-3 col-lg-1 col-xs-2 ml-3 btn btn-outline-primary" type="reset" name= "reset" value="Annuler" title="Annuler">
     </section>
 </form>
 <br>
 
+<!-- Footer -->
 <?php include 'footer.php' ;?>

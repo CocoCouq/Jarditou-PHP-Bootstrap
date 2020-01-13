@@ -1,5 +1,4 @@
 <!-- *** FOOTER *** -->
-
 <footer>
     <ul class="nav justify-content-center">
         <li class="nav-item">

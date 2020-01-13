@@ -1,5 +1,6 @@
-<!-- *** UPDATE DES PRODUITS *** -->
+<!-- Hearder -->
 <?php include 'header.php';?>
+<!-- Traitement formulaire + Requete SQL -->
 <?php
 // Récupération des donné de la page Details.php
     $id = $_POST['ID'];
@@ -16,7 +17,8 @@
     $requete = "UPDATE produits SET pro_stock=$stock, pro_prix=$prix, pro_libelle='$libelle', pro_ref='$reference', pro_description='$descrip', pro_couleur='$couleur', pro_d_modif='$today', pro_bloque='$bloq', pro_photo='$photo' WHERE pro_id = $id";
     $db->query($requete);
 ?>
-<!-- Informations après changement -->
+
+<!-- ******************************UPDATE*********************************** -->
 <section class="col-10 offset-1 text-center">
     <p><h1>ID</h1></p>
     <p class="prix"><?php echo $id; ?></p><br>
@@ -46,4 +48,5 @@
    ?></p><br>
 </section>
 
+<!-- Footer -->
 <?php include 'footer.php' ?>

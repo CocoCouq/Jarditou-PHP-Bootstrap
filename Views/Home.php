@@ -1,14 +1,17 @@
+<!-- Hearder -->
 <?php include 'header.php'; ?>
+<!-- Requete SQL -->
 <?php
   $requete = "SELECT pro_id, pro_photo, pro_prix FROM produits WHERE pro_stock > 50 ORDER BY pro_prix DESC";
   $result = $db->query($requete);
   verifObj($result);
 ?>
 
+<!-- ******************************Accueil********************************** -->
 <h1 id="ttlpage" class="col-4 offset-4">
     Accueil
 </h1><br>
-<!-----------Corps-Accueil---------->
+<!-- ***** Corps-Accueil ***** -->
 <div class="row">
 <section class="col-sm-7 col-lg-8">
     <article><h3 class="ml-1">L'entreprise</h3></article>
@@ -33,7 +36,7 @@
         Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.
     </p>
 </section>
-<!--------------Col-Rgt------------>
+<!-- ***** Col-Rgt ***** -->
 <section id="ColRg" class="col-11 col-sm-4 col-lg-3">
     <div id="CDC" class="row justify-content-center">
         <img id="cdcPht" class="img-fluid" src="../assets/images/cdc.png" alt="coup de coeur">
@@ -49,9 +52,10 @@
             <p class="prix col-8 mx-auto"> <?php echo $produit->pro_prix; ?> <img class="euro" src="../assets/images/euro.png" width="22px" height="22px"></p>
         </article>
     </div>
-  <?php } ?>
+  <?php } ?> <!--fin while -->
 </section>
 </div>
 <br>
 
+<!-- Footer -->
 <?php include 'footer.php' ?>
