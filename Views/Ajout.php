@@ -3,15 +3,15 @@
 <!-- Traitement formulaire + Requete SQL -->
 <?php
   // recupération des données du formulaire d'Ajout de produits
-    $stock = $_POST['Stock'];
-    $prix = $_POST['Prix'];
-    $libelle = $_POST['Libel'];
-    $reference = $_POST['Ref'];
-    $descrip = $_POST['Descrip'];
-    $couleur = $_POST['Couleur'];
+    $stock = htmlspecialchars($_POST['Stock']);
+    $prix = htmlspecialchars($_POST['Prix']);
+    $libelle = htmlspecialchars($_POST['Libel']);
+    $reference = htmlspecialchars($_POST['Ref']);
+    $descrip = htmlspecialchars($_POST['Descrip']);
+    $couleur = htmlspecialchars($_POST['Couleur']);
     $today = date("Y-m-d H:i:s");
     $bloq = $_POST['inlineRadioOptions'];
-    $categ = $_POST['Categ'];
+    $categ = htmlspecialchars($_POST['Categ']);
   //  Insert de la table produits
     $requete = "INSERT INTO produits(pro_prix, pro_libelle, pro_couleur, pro_ref, pro_description, pro_d_ajout, pro_bloque, pro_stock, pro_cat_id)
     VALUE ($prix, '$libelle', '$couleur', '$reference', '$descrip', '$today', '$bloq', $stock, $categ)";

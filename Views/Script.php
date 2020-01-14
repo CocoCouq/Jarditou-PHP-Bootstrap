@@ -3,16 +3,16 @@
 <!-- Traitement formulaire + Requete SQL -->
 <?php
 // Recuperation des donées du formulaire
-    $prenom = $_POST['prénom'];
-    $nom = $_POST['nom'];
-    $sexe = $_POST['inlineRadioOptions'];
-    $born = $_POST['Date'];
-    $adress = $_POST['Adresse'];
-    $city = $_POST['Ville'];
-    $CodeP = $_POST['CodePostal'];
-    $mail = $_POST['Email'];
-    $subj = $_POST['Sujet'];
-    $quest = $_POST['Questions'];
+    $prenom = htmlspecialchars($_POST['prénom']);
+    $nom = htmlspecialchars($_POST['nom']);
+    $sexe = htmlspecialchars($_POST['inlineRadioOptions']);
+    $born = htmlspecialchars($_POST['Date']);
+    $adress = htmlspecialchars($_POST['Adresse']);
+    $city = htmlspecialchars($_POST['Ville']);
+    $CodeP = htmlspecialchars($_POST['CodePostal']);
+    $mail = htmlspecialchars($_POST['Email']);
+    $subj = htmlspecialchars($_POST['Sujet']);
+    $quest = htmlspecialchars($_POST['Questions']);
 
     echo "<h1>Coordonnées</h1>";
 ?>

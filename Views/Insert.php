@@ -3,16 +3,16 @@
 <!-- Traitement formulaire + Requete SQL -->
 <?php
 // Récupération des donné de la page Details.php
-    $id = $_POST['ID'];
-    $stock = $_POST['Stock'];
-    $prix = $_POST['Prix'];
-    $libelle = $_POST['Libel'];
-    $reference = $_POST['Ref'];
-    $descrip = $_POST['Descrip'];
-    $couleur = $_POST['Couleur'];
+    $id = htmlspecialchars($_POST['ID']);
+    $stock = htmlspecialchars($_POST['Stock']);
+    $prix = htmlspecialchars($_POST['Prix']);
+    $libelle = htmlspecialchars($_POST['Libel']);
+    $reference = htmlspecialchars($_POST['Ref']);
+    $descrip = htmlspecialchars($_POST['Descrip']);
+    $couleur = htmlspecialchars($_POST['Couleur']);
     $today = date("Y-m-d H:i:s"); // Recuperation de la date du jour (heure Unix - donc décalée d'une heure)
     $bloq = $_POST['inlineRadioOptions'];
-    $photo = $_POST['Extension'];
+    $photo = htmlspecialchars($_POST['Extension']);
 // requete du UDATE de la table produits avec les valeurs du formulaire de produits
     $requete = "UPDATE produits SET pro_stock=$stock, pro_prix=$prix, pro_libelle='$libelle', pro_ref='$reference', pro_description='$descrip', pro_couleur='$couleur', pro_d_modif='$today', pro_bloque='$bloq', pro_photo='$photo' WHERE pro_id = $id";
     $db->query($requete);
