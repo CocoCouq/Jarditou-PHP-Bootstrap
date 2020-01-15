@@ -1,5 +1,10 @@
 <!-- Hearder -->
-<?php include 'header.php';?>
+<?php
+    $Home = '../Views/Home';
+    $Produits = '../Views/Produits';
+    $Contact = '../Views/Formulaires';
+    include '../Views/header.php';
+?>
 <!-- Requete SQL -->
 <?php
   $idProduit = $_POST['DeleteButton'];
@@ -8,7 +13,7 @@
   verifObj($result);
 ?>
 <!-- ******************************DELETE*********************************** -->
-<br><h1>Produit nº<?php echo $idProduit;?> supprimé</h1>
+<h1 class="mt-4">Produit nº<?php echo $idProduit;?> supprimé</h1>
 
 <!-- Footer -->
-<?php include 'footer.php' ?>
+<?php include '../Views/footer.php' ?>

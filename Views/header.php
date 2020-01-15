@@ -2,7 +2,7 @@
 <?php
     include '../Controllers/lib.php';
     require '../Models/Connexion.php';  //  Contenant la fonction de connexion à la database + verif des objets
-    $db = connexionBase(); 
+    $db = connexionBase();
 ?>
 <!-- *** HEADER *** -->
 <!DOCTYPE html>
@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="../assets/CSS/style.css">
     <link rel="stylesheet" href="../assets/CSS/media.css">
     <title>Contact</title>
-<body class="container-fluid">
-<!------------LOGO-SLOGAN------------>
+    <body class="container-fluid">
+    <!------------LOGO-SLOGAN------------>
     <header class="row">
         <section class="col-8">
             <img id="logo" src="../assets/images/jarditou_logo2.png" width="35%" height="auto" alt="Logo Jarditou">
@@ -28,17 +28,17 @@
     <!---------------Menu--------------->
     <section id="hena">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="Home.php">Accueil</a>
+            <a class="navbar-brand" href="<?php echo $Home; ?>.php">Accueil</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="Produits.php">Produits<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="<?php echo $Produits; ?>.php">Produits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Formulaires.php">Contact</a>
+                        <a class="nav-link" href="<?php echo $Contact ?>.php">Contact</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
@@ -46,6 +46,5 @@
                 </span>
             </div>
         </nav>
-    <!--------------Promo--------------->
         <img id="promo"  class="col-12" src="../assets/images/promotion.jpg" alt="promotion" title="A ne pas manquer !!">
     </section>

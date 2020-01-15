@@ -1,5 +1,10 @@
 <!-- Hearder -->
-<?php include 'header.php'; ?>
+<?php
+    $Home = '../Views/Home';
+    $Produits = '../Views/Produits';
+    $Contact = '../Views/Formulaires';
+    include '../Views/header.php';
+?>
 <!-- Traitement formulaire + Requete SQL -->
 <?php
 // Recuperation des donées du formulaire
@@ -47,4 +52,4 @@
 </section>
 
    <!-- Footer -->
-<?php include 'footer.php' ?>
+<?php include '../Views/footer.php' ?>
