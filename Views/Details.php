@@ -15,17 +15,17 @@
 ?>
 
 <!-- ******************************Détails********************************** -->
+<p class="alert alert-primary text-center h4 mt-4 col-lg-4">Modifier un produit</p>
 <form action="../Models/Insert.php" method="post">
-    <label class="h2" for="ID">ID</label><br><input class="form-control col-lg-4 mb-3" type="text" name="ID" value="<?php echo $row->pro_id; ?>" readonly>
-    <label class="h2" for="Ref">References</label><br><input class="form-control col-lg-4 mb-3" type="text" name="Ref" value="<?php echo $row->pro_ref; ?>">
-    <label class="h2" for="Libel">Libellé</label><br><input class="form-control col-lg-4 mb-3" type="text" name="Libel" value="<?php echo $row->pro_libelle; ?>">
-    <label class="h2" for="Descrip">Description</label><br><textarea class="form-control col-lg-4 mb-3" rows="5" name="Descrip"><?php echo $row->pro_description; ?></textarea>
-    <label class="h2" for="Prix">Prix</label><br><input class="form-control col-lg-4 mb-3" type="text" name="Prix" value="<?php echo $row->pro_prix; ?>">
-    <label class="h2" for="Couleur">Couleur</label><br><input class="form-control col-lg-4 mb-3" type="text" name="Couleur" value="<?php echo $row->pro_couleur; ?>">
-    <label class="h2" for="Stock">Stock</label><br><input class="form-control col-lg-4 mb-3" type="text" name="Stock" value="<?php echo $row->pro_stock; ?>">
+    <label class="h2" for="ID">ID</label><input class="form-control col-lg-4 mb-3" type="text" name="ID" value="<?php echo $row->pro_id; ?>" readonly>
+    <label class="h2" for="Ref">References</label><input class="form-control col-lg-4 mb-3" type="text" name="Ref" value="<?php echo $row->pro_ref; ?>">
+    <label class="h2" for="Libel">Libellé</label><input class="form-control col-lg-4 mb-3" type="text" name="Libel" value="<?php echo $row->pro_libelle; ?>">
+    <label class="h2" for="Descrip">Description</label><textarea class="form-control col-lg-4 mb-3" rows="5" name="Descrip"><?php echo $row->pro_description; ?></textarea>
+    <label class="h2" for="Prix">Prix</label><input class="form-control col-lg-4 mb-3" type="text" name="Prix" value="<?php echo $row->pro_prix; ?>">
+    <label class="h2" for="Couleur">Couleur</label><input class="form-control col-lg-4 mb-3" type="text" name="Couleur" value="<?php echo $row->pro_couleur; ?>">
+    <label class="h2" for="Stock">Stock</label><input class="form-control col-lg-4 mb-3" type="text" name="Stock" value="<?php echo $row->pro_stock; ?>">
     <p>Date d'ajout : <?php echo $row->pro_d_ajout; ?></p>
     <p>Date de modification : <?php echo $row->pro_d_modif; ?></p>
-
 <?php
 //  Gestion de l'option 'bloqué' (== 1 si bloqué)
     if ($row->pro_bloque == 1)
@@ -54,9 +54,8 @@
     </div><br>
 <?php } ?> <!-- fin else -->
 <!-- Format photo -->
-    <label for="Extension">Format Photo</label><br><input class="form-control col-lg-4 mb-5" type="text" name="Extension" value="<?php echo $row->pro_photo; ?>">
+    <label class="h2" for="Extension">Format Photo</label><br><input class="form-control col-lg-4 mb-5" type="text" name="Extension" value="<?php echo $row->pro_photo; ?>">
     <section class="col-lg-4 mb-2">
-
 <!-- Envoyer / Annuler -->
 <!-- ********** Modal de confirmation Modif ********** -->
 <!-- Button Envoyer Modal -->
@@ -74,7 +73,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p class="alert alert-success text-center col-12">ID nº <?php echo $row->pro_id; ?></p><br>
+                        <p class="alert alert-success text-center col-12 mb-3">ID nº <?php echo $row->pro_id; ?></p>
                         <p class="alert alert-success h6 col-12">Confirmez-vous les modifications pour le produit <?php echo $row->pro_libelle; ?> ?</p>
                     </div>
                     <div class="modal-footer">
@@ -84,18 +83,26 @@
                 </div>
             </div>
         </div>
-        <a class="btn btn-outline-primary col-5 mb-3" href="Produits.php">Annuler</a><br>
+        <a class="btn btn-outline-primary col-5 mb-3" href="Produits.php">Annuler</a>
     </section>
 </form>
-
+<!-- *** Ajout *** -->
+<form class="mt-3" action="../Models/AjoutPhoto.php" method="POST" enctype="multipart/form-data">
+<p class="alert alert-primary text-center h4 col-lg-4">Ajouter une image</p>
+    <input class=" col-8 offset-2 col-lg-2 offset-lg-1 form-group" type="file" name="ImgPro">
+    <input type="hidden" name="prodIDphoto" value="<?php echo $row->pro_id; ?>">
+    <input id="SendImage" class="form-control col-8 offset-2 col-lg-2 offset-lg-1 mb-5" type="submit" name="SendImg" value="Ajouter la Photo">
+</form>
+<p class="alert alert-success text-center h4 col-lg-4">Nouveau Produit</p>
 <!-- *** Ajout de produit *** -->
-<a class="btn btn-info col-8 offset-2 col-lg-2 offset-lg-1 mb-2" href="AjoutProduit.php">Ajouter un Produit</a>
-
+<a class="btn btn-info col-8 offset-2 col-lg-2 offset-lg-1 mb-5 mt-1" href="AjoutProduit.php">Ajouter un Produit</a>
+<section class="alert alert-danger text-center h4 col-lg-4">
+    <p><img class="" src="../assets/images/attention.png" width="35vw">Danger Zone</p>
 <!-- Suppresion de produits -->
 <!-- ********** Modal de Suppréssion ********** -->
 <form action="../Models/Delete.php" method="post"> <!-- Recupération de l'id -->
     <!-- Button modal Supprimer -->
-    <button  type="button" class="btn btn-outline-danger col-8 offset-2 col-lg-2 offset-lg-1 mb-4" data-toggle="modal" data-target="#exampleModal2">
+    <button  type="button" class="btn btn-outline-danger mb-4 mt-1 col-8" data-toggle="modal" data-target="#exampleModal2">
         Supprimer le produit
     </button>
     <!-- Modal -->
@@ -122,6 +129,7 @@
         </div>
     </div>
 </form>
+</section>
 
 <!-- Footer -->
 <?php include 'footer.php' ?>
