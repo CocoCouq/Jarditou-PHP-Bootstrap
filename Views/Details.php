@@ -86,11 +86,12 @@
         <a class="btn btn-outline-primary col-5 mb-3" href="Produits.php">Annuler</a>
     </section>
 </form>
-<!-- *** Ajout *** -->
+<!-- *** Ajout/Modification IMAGE *** -->
 <form class="mt-3" action="../Models/AjoutPhoto.php" method="POST" enctype="multipart/form-data">
 <p class="alert alert-primary text-center h4 col-lg-4">Ajouter une image</p>
-    <input class=" col-8 offset-2 col-lg-2 offset-lg-1 form-group" type="file" name="ImgPro">
-    <input type="hidden" name="prodIDphoto" value="<?php echo $row->pro_id; ?>">
+    <input class=" col-8 offset-2 col-lg-2 offset-lg-1 form-group" type="file" name="ImgPro"> <!-- Photo -->
+    <input type="hidden" name="prodIDphoto" value="<?php echo $row->pro_id; ?>"> <!-- IDPhoto -->
+    <input type="hidden" name="SizeImg" value="17000"> <!-- Taille Max -->
     <input id="SendImage" class="form-control col-8 offset-2 col-lg-2 offset-lg-1 mb-5" type="submit" name="SendImg" value="Ajouter la Photo">
 </form>
 <p class="alert alert-success text-center h4 col-lg-4">Nouveau Produit</p>

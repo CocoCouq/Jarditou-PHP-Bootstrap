@@ -25,7 +25,8 @@
     verifObj($result);
 ?>
 <!-- ******************************INSERT*********************************** -->
-<p class="prix">LES VALEURS ONT ÉTÉ AJOUTÉS AVEC SUCCÈS</p>
+<p class="alert alert-success h3 text-center mt-3">LES VALEURS ONT ÉTÉ AJOUTÉS AVEC SUCCÈS</p>
+<p class="alert alert-warning text-center h4">Pour ajouter une photo, veuillez vous rendre sur la page de modification de l'arcticle.</p>
 <?php
   //  Affichage des données du produit
     echo "<h1>Catégorie : ".$categ."</h1>";
