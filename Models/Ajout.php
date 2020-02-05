@@ -1,4 +1,4 @@
-<!-- Hearder -->
+<!-- Header -->
 <?php
     $Home = '../Views/Home';
     $Produits = '../Views/Produits';
