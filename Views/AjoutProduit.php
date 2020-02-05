@@ -43,6 +43,5 @@
         <a class="btn btn-outline-primary col-5" href="Produits.php">Annuler</a>
     </section>
 </form>
-
 <!-- Footer -->
 <?php include 'footer.php' ?>
